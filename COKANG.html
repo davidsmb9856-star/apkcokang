@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LINETOGEL</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://i.imgur.com/2JxN0Xh.jpg') center/cover no-repeat fixed;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .header {
+      margin: 40px 0;
+      text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00cc;
+      animation: glow 2s infinite alternate;
+    }
+
+    .header h1 {
+      font-size: 4.2rem;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 1.4rem;
+      opacity: 0.9;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .menu-item {
+      background: rgba(0, 0, 0, 0.4);
+      border: 2px solid #0ff;
+      border-radius: 12px;
+      padding: 20px 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(4px);
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+
+    .menu-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px #0ff, 0 0 35px #ff00ff;
+      background: rgba(10, 10, 30, 0.6);
+      border-color: #ff00ff;
+    }
+
+    .menu-item a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      display: block;
+      padding: 8px;
+    }
+
+    .menu-item.coming-soon a::after {
+      content: " ⏳";
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00cc; }
+      to   { text-shadow: 0 0 15px #fff, 0 0 25px #ff00ff, 0 0 40px #ff00ff; }
+    }
+
+    @media (max-width: 600px) {
+      .header h1 { font-size: 2.8rem; }
+      .menu-item a { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>LINETOGEL</h1>
+      <p>⚡️ Aplikasi Togel All-in-One ⚡️</p>
+    </div>
+
+    <div class="menu-grid">
+      <!-- 20 Menu COMING SOON -->
+      <div class="menu-item coming-soon"><a href="#">DEPOSIT</a></div>
+      <div class="menu-item coming-soon"><a href="#">WITHDRAW</a></div>
+      <div class="menu-item coming-soon"><a href="#">GANGGUAN</a></div>
+      <div class="menu-item coming-soon"><a href="#">KENDALA ALL</a></div>
+      <div class="menu-item coming-soon"><a href="#">FOTO</a></div>
+      <div class="menu-item coming-soon"><a href="#">CARA BERMAIN</a></div>
+      <div class="menu-item coming-soon"><a href="#">PROMO</a></div>
+      <div class="menu-item coming-soon"><a href="#">HITUNGAN TOGEL</a></div>
+      <div class="menu-item coming-soon"><a href="#">PASARAN LIVE</a></div>
+      <div class="menu-item coming-soon"><a href="#">JADWAL PASARAN</a></div>
+      <div class="menu-item coming-soon"><a href="#">REPORT MASALAH</a></div>
+      <div class="menu-item coming-soon"><a href="#">BONUS HARIAN</a></div>
+      <div class="menu-item coming-soon"><a href="#">REFERRAL</a></div>
+      <div class="menu-item coming-soon"><a href="#">NOTIFIKASI</a></div>
+      <div class="menu-item coming-soon"><a href="#">HISTORY BET</a></div>
+      <div class="menu-item coming-soon"><a href="#">ANALISA TOGEL</a></div>
+      <div class="menu-item coming-soon"><a href="#">TIPS JITU</a></div>
+      <div class="menu-item coming-soon"><a href="#">CHAT SUPPORT</a></div>
+      <div class="menu-item coming-soon"><a href="#">DOWNLOAD APK</a></div>
+      <div class="menu-item coming-soon"><a href="#">UPDATE TERBARU</a></div>
+    </div>
+  </div>
+
+  <script>
+    // Opsional: Tambahkan alert atau redirect saat diklik
+    document.querySelectorAll('.coming-soon a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Fitur ini akan segera hadir! 🔜\nSilakan cek kembali nanti.');
+      });
+    });
+  </script>
+</body>
+</html>
